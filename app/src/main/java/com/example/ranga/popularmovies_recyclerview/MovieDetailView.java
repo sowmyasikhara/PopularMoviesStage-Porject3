@@ -257,6 +257,7 @@ public class MovieVideoAsyncTask extends AsyncTask<URL, Void, String> {
         URL url = MovieNetworkUtils.getMovieVideoUrl(movie_base_url, id);
         final ArrayList youtubeKeys;
 
+
         ParseMovieJSONDetails parse = new ParseMovieJSONDetails();
 
 
@@ -295,18 +296,19 @@ public class MovieVideoAsyncTask extends AsyncTask<URL, Void, String> {
             public void onClick(View v) {
                 if (youtubeKeys!=null) {
 
-                        for (int i = 0; i < youtubeKeys.size(); i++) {
-                            youTubeKey[1] = String.valueOf(youtubeKeys.get(1));
+                        for (int i = 1; i < youtubeKeys.size(); i++) {
+                            youTubeKey[0] = String.valueOf(youtubeKeys.get(i));
 
                         }
                             Intent intent = getIntent();
                             intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
                     intent = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("http://www.youtube.com/watch?v=" + youTubeKey[1]));
+                            Uri.parse("http://www.youtube.com/watch?v=" + youTubeKey[0]));
 
                     startActivity(intent);
                 } else if (youtubeKeys == null) {
                     Toast.makeText(getApplicationContext(), "Trailor not available", Toast.LENGTH_LONG).show();
+                    Log.d("trailor 2",youTubeKey[1]);
                 }
 
             }
