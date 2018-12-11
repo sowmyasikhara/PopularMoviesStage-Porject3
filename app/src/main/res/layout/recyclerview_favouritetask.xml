@@ -15,9 +15,9 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
         android:layout_alignLeft="@id/imagesViewId"
-        android:src="@drawable/favourite_icon_yellow" />
+        android:src="@drawable/favourite_stars_icon" />
 
 </RelativeLayout>
