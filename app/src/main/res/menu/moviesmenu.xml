@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/shareId"
+        android:title = "Share"
+        android:icon="@drawable/share_grey_icon"
+        android:contentDescription="share"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+       />
+
+    <item
+        android:id="@+id/favouriteId"
+        android:title = "Add to Favourite"
+        android:icon="@drawable/favourite_icon_grey1"
+        android:contentDescription="favourites"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

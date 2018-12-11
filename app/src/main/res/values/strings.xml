@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PopularMovies-RecyclerView</string>
+    <string name="sort_by_popularity">popularity.desc</string>
+    <string name="sort_by_topRated">vote_average.desc</string>
+    <string name="popular">https://api.themoviedb.org/3/movie/popular</string>
+    <string name="top_rated">https://api.themoviedb.org/3/movie/top_rated</string>
+    <string name="base_url">https://api.themoviedb.org/3/movie</string>
+
+
+    <string name="movie_title">MovieTitle</string>
+    <string name="release_date">Release-Date</string>
+    <string name="vote_avg">Vote_average</string>
+    <string name="plot_synopsis">Plot_synopsis</string>
+
+
+    <string name="api_key">06a566cf4b59a36e14f0e4ab07ab8f85</string>
+    <string name="title_activity_movie_review">MovieReviewActivity</string>
+    <string name="movie_id">DELETE FROM movie_details WHERE movieId = getString(R.id.)</string>
+
+</resources>
